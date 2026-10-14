@@ -17,7 +17,7 @@ for seven days. Four groups were compared:
 | SR/7DL | sleep restricted, tested seven days later |
 
 Three measurements are covered by this repository: the novel tank test, the
-shallow water test, and video monitoring of activity in the home tanks during
+shallow water test, cortisol and video monitoring of activity in the home tanks during
 the recovery period.
 
 ## What is in this repository
@@ -31,11 +31,11 @@ Each folder has its own README with the measures, the files, and the commands
 that reproduce its outputs. Both folders ship the processed data they analyse,
 so every table and figure can be reproduced without the raw videos.
 
-**behaviour-ntt-swt** holds one standalone R script per test. Both produce
+**behaviour-ntt-swt** holds one standalone R script per figure. Both produce
 whole-session measures and 30-second time courses, for the two comparisons the
 paper reports (CTRL against SR, and CTRL/7DL against SR/7DL), with individual
 animals shown as points, normality checked before each test, raw p-values marked
-on the figures and false discovery rate corrected values in the tables.
+on the figures.
 
 **home-tank-activity** holds the Python pipeline that measures activity from the
 home-tank recordings and the R script that produces the statistics and the
@@ -75,9 +75,7 @@ recordings.
 The behavioural tests use the animal as the unit. The home-tank recordings use
 the tank as the unit: fish within a tank share water, feeding and handling, so
 they are not independent replicates, which leaves four tanks per condition and
-makes that part of the study exploratory. The limitations of the video measure,
-including the confound between condition and camera position, are set out in
-`home-tank-activity/README.md`.
+makes that part of the study exploratory.
 
 ## Citation and licence
 

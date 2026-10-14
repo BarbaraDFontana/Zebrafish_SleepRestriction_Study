@@ -1,7 +1,7 @@
 # Home-tank activity in group-housed zebrafish
 
 Video analysis and statistics for the home-tank activity measurements reported
-in that paper. Everything needed to reproduce the published figure and
+in [paper reference]. Everything needed to reproduce the published figure and
 tables from the raw recordings is here: the code, the parameters that were used,
 the validation data, and the limitations of the measurement.
 
@@ -33,32 +33,18 @@ Manual counts averaged 5.04 of 6 fish visible per tank-frame, because fish
 occlude one another in the side view, so six detections is not the correct target
 in every frame. This is why per-fish measures were dropped.
 
-Raw validation data: `validation/manual_counts.csv`, with the 24 images that
-were counted in `validation/frames/`, and the scores in
-`validation/validation_score.csv`.
+Raw validation data: `validation/manual_counts.csv` and `validation/frames/`.
 
 ## Files
 
 ```
-sleep_core.py                   shared configuration and image analysis
-run_pipeline.py                 main run over all recordings  -> results/
-tune_parameters.py              parameter selection by grid search
-validate.py                     counting sheets, detector score, output checks
-analysis.R                      statistics, tables and figures
-tuned_params.json               detection parameters per cohort, camera, phase
-fish_alive.csv                  fish alive per tank from a given date
-results/activity_binned.csv     the measured data behind the paper
-results/qc_summary.csv          one row per recording
-validation/manual_counts.csv    manual counts against detector counts
-validation/frames/              the images the observer counted
-```
-
-The recordings themselves are not in this repository because of their size;
-`results/activity_binned.csv` is the output they produce, so the statistics and
-the figure can be reproduced without them:
-
-```bash
-Rscript analysis.R          # run from this folder
+sleep_core.py          shared configuration and image analysis
+run_pipeline.py        main run over all recordings  -> results/
+tune_parameters.py     parameter selection by grid search
+validate.py            counting sheets, detector score, checks on the output
+analysis.R             statistics, tables and figures -> results/analysis/
+tuned_params.json      detection parameters per cohort, camera and light phase
+fish_alive.csv         number of fish alive per tank from a given date
 ```
 
 Recordings are named `CAMERA R DDMMYYYY HHMMSS.mp4`. The first cohort used
@@ -177,4 +163,6 @@ the picture back to daytime levels within minutes of lights-off.
 
 ## Citation and licence
 
-If you use this code, please cite the paper from the main repository
+If you use this code, please cite [paper reference]. Released under [licence].
+The raw recordings are [available at / available on request] because of their
+size.

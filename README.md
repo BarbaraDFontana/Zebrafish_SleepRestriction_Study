@@ -23,7 +23,7 @@ the recovery period.
 ## What is in this repository
 
 ```
-behaviour-ntt-swt/        novel tank test and shallow water test: R analysis
+behaviour-ntt-swt/        novel tank test, shallow water test and cortisol: R analysis
 home-tank-activity/       video analysis of activity in the home tanks
 ```
 
@@ -48,8 +48,8 @@ tracking individual fish.
 Both folders run on the processed data included here.
 
 ```bash
-cd behaviour-ntt-swt   && Rscript analysis_ntt.R && Rscript analysis_swt.R
-cd home-tank-activity  && Rscript analysis.R
+cd behaviour-ntt-swt   
+cd home-tank-activity  
 ```
 
 Reprocessing the raw recordings needs the videos and is described in

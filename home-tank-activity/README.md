@@ -1,8 +1,5 @@
 # Home-tank activity in group-housed zebrafish
 
-Part of the repository for [paper reference]; the behavioural tests are in
-`../behaviour-ntt-swt`.
-
 Video analysis and statistics for the home-tank activity measurements reported
 in that paper. Everything needed to reproduce the published figure and
 tables from the raw recordings is here: the code, the parameters that were used,
@@ -180,8 +177,4 @@ the picture back to daytime levels within minutes of lights-off.
 
 ## Citation and licence
 
-If you use this code, please cite [paper reference], and the software itself
-through `../CITATION.cff`. Released under the MIT licence; see `../LICENSE`.
-
-The raw recordings are [available at / available on request] because of their
-size.
+If you use this code, please cite the paper from the main repository

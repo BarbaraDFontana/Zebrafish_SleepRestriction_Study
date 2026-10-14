@@ -68,8 +68,7 @@ same palette is used in both folders.
 
 The processed data are included: per-animal measures for the two behavioural
 tests, and per-tank, per-recording, per-10-minute-bin activity for the home-tank
-recordings. The raw video recordings are [available at / available on request]
-because of their size.
+recordings.
 
 ## How to read the statistics
 

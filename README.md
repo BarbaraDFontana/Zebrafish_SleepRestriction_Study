@@ -77,7 +77,7 @@ the tank as the unit: fish within a tank share water, feeding and handling, so
 they are not independent replicates, which leaves four tanks per condition and
 makes that part of the study exploratory.
 
-## Citation and licence
+## Citation
 
-If you use this code, please cite [paper reference], and the software itself
-through `CITATION.cff`. Released under the MIT licence; see `LICENSE`.
+If you use this code or the data, please cite:
+> Fontana et al. (in preparation). [paper title]
